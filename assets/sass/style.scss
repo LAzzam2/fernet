@@ -1,12 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
-
-$sans: sans-serif;
-$serif: serif;
 
 @mixin center($v1,$v2){
 	transform: translate($v1,$v2);
@@ -15,89 +7,158 @@ $serif: serif;
 	-ms-transform: translate($v1,$v2);
 	-o-transform: translate($v1,$v2);
 }
+@mixin transition($v1,$v2){
+	transition: $v1 $v2;
+	-webkit-transition: $v1 $v2;
+	-moz-transformtransition: $v1 $v2;
+	-ms-transition: $v1 $v2;
+	-o-transition: $v1 $v2;
+}
 
-html {
-	background: url(../img/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@mixin serifStack($size,$lheight){
+	font-family: "schoolbook-web";
+	font-size: $size ;
+	font-weight: bold;
+	line-height: $lheight;
+}
+
+@mixin sansStack(){
+	font-family: helvetica neue;
+	font-size: .7em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+
+@mixin asideStack(){
+	color: white;
+	font-size: .6em;
+}
+
+body{
 }
 
 html, body {
 	height: 100%;
 	width: 100%;
-	font-family: $sans;
 	position: relative;
+	overflow: hidden;
+	font-family: helvetica neue;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+video {
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 0;
 }
 #cFlood {
-	background-color: rgba(160,250,194,.2);
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0; left: 0;
+	z-index: 1;
+	pointer-events: none;
+	background-color: rgba(0,0,0,1);
 }
 #wrap {
 	position: absolute;
-	top: 50%; left: 50%;
-	@include center(-50%,-50%);
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 5;
+	#content{
+		pointer-events: none;
+		position: absolute;
+		top: 50%; left: 50%;
+		@include center(-50%,-50%);
+		width: 100%;
+		max-width: 740px;
+	}
 	#logo {
 		float: left;
-		max-width: 200px;
+		width: 25%;
+		@include center(150%,0);
+		opacity: 0;
 		img {
 			width: 100%;
 		}
 	}
 	#copy {
-		margin-left: 25px;
+		float: right;
+		max-width: 65%;
 		h1 {
-			font-family: serif;
-			font-size: 2.5em;
+			@include serifStack(3.5em, .9em);
 			color: #424242;
+			margin-bottom: 25px;
+			position: relative;
+			height: 150px;
+			span {
+				position: absolute;
+				opacity: 0;
+			}
 		}
 		p {
+			@include sansStack();
 			color: white;
-			max-width: 800px;
+			opacity: 0;
+			max-width: 80%;
 		}
 	}
 }
 
 #footer {
 	position: fixed;
-	bottom: 0;
+	bottom: -165px;
 	left: 0;
 	width: 100%;
 	height: 165px;
 	background-color: rgba(255,255,255,.1);
 	border-top: 1px solid white;
+	z-index: 5;
 	form {
 		width: 60%;
 		margin: auto;
 		position: relative;
 		text-align: center;
-		.aside {
-			color: white;
-			font-size: .6em;
-		}
+		border-bottom: 1px dotted white;
+	}
+	.aside {
+		@include asideStack();
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
 	}
 	input {
 		background: none;
 		outline: none;
 		border: none;
 		text-align: center;
-		margin: 25px 0px 10px 0px;
+		margin-top: 25px;
 		color: white;
-		font-size: 2.3em;
 	}
 	input[type=email]{
-		border-bottom: 1px dotted white;
-		font-family: $serif;
+		@include serifStack(2.0em, 1.5em);
+		letter-spacing: 2px;
+		font-weight: 100;
 		width: 100%;
 		text-transform: uppercase;
+		margin-bottom: -5px;
+		cursor: hand; cursor: pointer;
 	}
 	input[type=submit]{
+		@include serifStack(2.0em, 1.5em);
 		position: absolute;
-		top: 0; right: 0;
+		bottom: 0px; right: 0;
+		height: 35px;
+		width: 35px;
+		background: url(../img/submit.png) no-repeat center center;
+		-webkit-background-size: cover;
+		moz-background-size: cover;
+		o-background-size: cover;
+		background-size: cover;
 		cursor: hand; cursor: pointer;
 	}
 	#social {
@@ -108,16 +169,18 @@ html, body {
 			float: left;
 			margin-right: 30px;
 			position: relative;
+			text-transform: uppercase;
 			a {
 				text-decoration: none;
 				color: white;
+				font-size: .7em;
 			}
 		}
 		li:nth-child(2):before, li:nth-child(2):after{
 			content: '';
 			position: absolute;
-			top: 5px;
-			height: 5px; width: 5px;
+			top: 6px;
+			height: 3px; width: 3px;
 			background-color: white;
 			border-radius: 50%;
 		}
@@ -130,21 +193,109 @@ html, body {
 	}
 
 }
+#splashSplash {
+	position: absolute;
+	top: 50%; left: 50%;
+	@include center(-50%,-50%);
+	text-align: center;
+	z-index: 500;
+	.logoType {
+		position: relative;
+		width: 520px;
+		height: 41px;
+		img {
+			position: absolute;
+			top: 0; left: 0;
+			width: 100%;
+		}
+	}
+	.ageBtn {
+		border: 1px solid white;
+		display: inline-block;
+		color: white;
+		margin: 10px 0px;
+		cursor: hand; cursor: pointer;
+		box-sizing: border-box;
+		position: relative;
+		height: 35px;
+		width: 35px;
+		img {
+			height: 70%;
+			width: 70%;
+			margin-top: 15%;
+		}
+		.fill {
+			position: absolute;
+			bottom: 0; left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: rgba(255,255,255,.3);
+			@include transition(width, 250ms);
+		}
+	}
+	.ageBtn:nth-child(2) {
+		.fill {
+  			left: auto;
+			right: 0;
+		}
+	}
+	.ageBtn:hover {
+		.fill {
+			width: 100%;
+		}
+	}
+	.aside {
+		@include asideStack();
+		margin-top: 35px;
+	}
+}
 
 
+
+.pace .pace-progress {
+  background: #fcfff4;
+  position: fixed;
+  z-index: 2000;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}
 
 ::-webkit-input-placeholder {
    color: white;
+   letter-spacing: 2px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: white;  
+   letter-spacing: 2px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: white;  
+   letter-spacing: 2px;
 }
 
 :-ms-input-placeholder {  
    color: white;  
+   letter-spacing: 2px;
+}
+
+input[type=email]::-webkit-input-placeholder  {
+  -webkit-transition: opacity 0.2s linear; 
+}
+input[type=email]:focus::-webkit-input-placeholder{
+	opacity: 0 !important;
+}
+input[type=email]:hover::-webkit-input-placeholder  {
+  opacity: 0.4;
 }

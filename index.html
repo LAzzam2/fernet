@@ -1,43 +1,65 @@
 <!doctype html>
 <head>
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<script src="//use.typekit.net/vyj3yzr.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-
-<!-- <div id="cFlood"></div> -->
+	<video autoplay loop>
+		<source src="assets/video/fog.mp4" type="video/mp4">
+		<source src="assets/video/fog.ogg" type="video/ogg">
+	</video>
+<div id="cFlood"></div>
 
 <div id="wrap">
-	<div id="logo">
-		<img src="assets/img/logo.png" alt="logo" />
-	</div>
-	<div id="copy">
-		<h1>
-			FERNET<br/>
-			FOR THE<br/>
-			LIONHEARTED
-		</h1>
-		<p>
-			In each batch of Fernet Francisco, we distill 12 hand-picked ingredients with a holy wisp of fresh fog. The purest. The surest. The Spirit of San Francisco. Coming spring of 2015.
-		</p>
-	</div>
+	<div id="splashSplash">
+		<div class="logoType">
+			<img src="assets/img/ff_logotype.png" alt="logotype" />
+			<img src="assets/img/ff_logotype_white.png" alt="logotype" />
+		</div>
 
+		<div class="agegateBtn">
+			<p class="aside">OVER 21? CHECK THE BOX AND JOIN THE PARTY.</p>
+			<div id="cancel" class="ageBtn"><img src="assets/img/x.png" alt="nope" /><div class="fill"></div></div>
+			<div id="accept" class="ageBtn"><img src="assets/img/submit.png" alt="nope" /><div class="fill"></div></div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="logo">
+			<img src="assets/img/logo.png" alt="logo" />
+		</div>
+		<div id="copy">
+			<h1>
+				<span>FERNET</span>
+				<span>FOR THE</span>
+				<span>LIONHEARTED</span>
+			</h1>
+			<p>
+				In each batch of Fernet Francisco, we distill 12 hand-picked ingredients with a holy wisp of fresh fog. The purest. The surest. The Spirit of San Francisco. Coming spring of 2015.
+			</p>
+		</div>
+	</div>
 </div>
 
 	<div id="footer">
 		<form>
 			<input type="email" placeholder="Enter Email">
-			<input type="submit" value=">" >
-			<p class="aside">
-				(WE'LL ONLY BOTHER YOU IF ITS ABSOLUTELY FUCKING NECESSARY)
-			</p>
+			<input type="submit" value="" >
 		</form>
-
+		<p class="aside">
+			( WE'LL ONLY BOTHER YOU IF ITS ABSOLUTELY FUCKING NECESSARY )
+		</p>
 		<ul id="social">
 			<li><a href="#facebook">Facebook</a></li>
 			<li><a href="#twitter">Twitter</a></li>
 			<li><a href="#instagram">Instagram</a></li>
 		</ul>	
 	</div>
-
+	<script src="assets/js/pace.js"></script>
+	<script src="assets/js/transit.js"></script>
+	<script src="assets/js/functions.js"></script>
 </body>
 </html>
