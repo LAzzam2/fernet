@@ -80,7 +80,7 @@ video {
   min-width: 100%;
   height: auto;
   width: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
@@ -90,7 +90,7 @@ video {
 #cFlood {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
@@ -104,9 +104,12 @@ video {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   z-index: 5;
+  padding: 25px;
+  box-sizing: border-box;
 }
-/* line 72, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 #wrap #content {
   pointer-events: none;
   position: absolute;
@@ -117,30 +120,30 @@ video {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   max-width: 740px;
 }
-/* line 80, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #wrap #logo {
   float: left;
   width: 25%;
-  transform: translate(150%, 0);
-  -webkit-transform: translate(150%, 0);
-  -moz-transform: translate(150%, 0);
-  -ms-transform: translate(150%, 0);
-  -o-transform: translate(150%, 0);
+  transform: translate(-25px, 0);
+  -webkit-transform: translate(-25px, 0);
+  -moz-transform: translate(-25px, 0);
+  -ms-transform: translate(-25px, 0);
+  -o-transform: translate(-25px, 0);
   opacity: 0;
 }
-/* line 85, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 #wrap #logo img {
   width: 100%;
 }
-/* line 89, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #wrap #copy {
   float: right;
   max-width: 65%;
 }
-/* line 92, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 #wrap #copy h1 {
   font-family: "schoolbook-web";
   font-size: 3.5em;
@@ -151,12 +154,12 @@ video {
   position: relative;
   height: 150px;
 }
-/* line 98, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 #wrap #copy h1 span {
   position: absolute;
   opacity: 0;
 }
-/* line 103, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 #wrap #copy p {
   font-family: helvetica neue;
   font-size: .7em;
@@ -167,7 +170,7 @@ video {
   max-width: 80%;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 #footer {
   position: fixed;
   bottom: -165px;
@@ -178,7 +181,7 @@ video {
   border-top: 1px solid white;
   z-index: 5;
 }
-/* line 121, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 #footer form {
   width: 60%;
   margin: auto;
@@ -186,7 +189,7 @@ video {
   text-align: center;
   border-bottom: 1px dotted white;
 }
-/* line 128, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 #footer .aside {
   color: white;
   font-size: .6em;
@@ -194,7 +197,7 @@ video {
   text-align: center;
   margin-top: 10px;
 }
-/* line 134, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 #footer input {
   background: none;
   outline: none;
@@ -203,7 +206,7 @@ video {
   margin-top: 25px;
   color: white;
 }
-/* line 142, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #footer input[type=email] {
   font-family: "schoolbook-web";
   font-size: 2em;
@@ -217,7 +220,7 @@ video {
   cursor: hand;
   cursor: pointer;
 }
-/* line 151, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 #footer input[type=submit] {
   font-family: "schoolbook-web";
   font-size: 2em;
@@ -236,30 +239,29 @@ video {
   cursor: hand;
   cursor: pointer;
 }
-/* line 164, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 #footer #social {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 25px);
-  -webkit-transform: translate(-50%, 25px);
-  -moz-transform: translate(-50%, 25px);
-  -ms-transform: translate(-50%, 25px);
-  -o-transform: translate(-50%, 25px);
+  margin: 25px 0px;
+  text-align: center;
 }
-/* line 168, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 #footer #social li {
-  float: left;
+  display: inline-block;
   margin-right: 30px;
   position: relative;
   text-transform: uppercase;
 }
-/* line 173, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #footer #social li a {
   text-decoration: none;
   color: white;
   font-size: .7em;
 }
-/* line 179, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
+#footer #social li:last-child {
+  margin-right: 0px;
+}
+/* line 184, ../sass/style.scss */
 #footer #social li:nth-child(2):before, #footer #social li:nth-child(2):after {
   content: '';
   position: absolute;
@@ -269,16 +271,16 @@ video {
   background-color: white;
   border-radius: 50%;
 }
-/* line 187, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #footer #social li:nth-child(2):before {
   left: -15px;
 }
-/* line 190, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #footer #social li:nth-child(2):after {
   right: -17px;
 }
 
-/* line 196, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 #splashSplash {
   position: absolute;
   top: 50%;
@@ -290,21 +292,18 @@ video {
   -o-transform: translate(-50%, -50%);
   text-align: center;
   z-index: 500;
+  width: 90%;
+  max-width: 520px;
 }
-/* line 202, ../sass/style.scss */
-#splashSplash .logoType {
-  position: relative;
-  width: 520px;
-  height: 41px;
-}
-/* line 206, ../sass/style.scss */
-#splashSplash .logoType img {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* line 209, ../sass/style.scss */
+#splashSplash img {
   width: 100%;
 }
 /* line 212, ../sass/style.scss */
+#splashSplash .agegateBtn {
+  opacity: 0;
+}
+/* line 215, ../sass/style.scss */
 #splashSplash .ageBtn {
   border: 1px solid white;
   display: inline-block;
@@ -317,13 +316,13 @@ video {
   height: 35px;
   width: 35px;
 }
-/* line 222, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 #splashSplash .ageBtn img {
   height: 70%;
   width: 70%;
   margin-top: 15%;
 }
-/* line 227, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 #splashSplash .ageBtn .fill {
   position: absolute;
   bottom: 0;
@@ -337,23 +336,22 @@ video {
   -ms-transition: width 250ms;
   -o-transition: width 250ms;
 }
-/* line 237, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 #splashSplash .ageBtn:nth-child(2) .fill {
   left: auto;
   right: 0;
 }
-/* line 243, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #splashSplash .ageBtn:hover .fill {
   width: 100%;
 }
-/* line 247, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 #splashSplash .aside {
   color: white;
   font-size: .6em;
-  margin-top: 35px;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .pace .pace-progress {
   background: #fcfff4;
   position: fixed;
@@ -367,48 +365,129 @@ video {
   transition: width 1s;
 }
 
-/* line 269, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .pace-inactive {
   display: none;
 }
 
-/* line 273, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 283, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 :-ms-input-placeholder {
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 input[type=email]::-webkit-input-placeholder {
   -webkit-transition: opacity 0.2s linear;
 }
 
-/* line 296, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 input[type=email]:focus::-webkit-input-placeholder {
   opacity: 0 !important;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 input[type=email]:hover::-webkit-input-placeholder {
   opacity: 0.4;
+}
+
+@media (min-width: 641px) and (max-width: 750px) {
+  /* line 308, ../sass/style.scss */
+  #wrap #copy h1 {
+    font-size: 3em;
+    height: 120px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 316, ../sass/style.scss */
+  html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  /* line 320, ../sass/style.scss */
+  #wrap {
+    position: inherit;
+    height: 100%;
+  }
+  /* line 323, ../sass/style.scss */
+  #wrap #logo {
+    transform: translate(0%, 0);
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    float: none;
+    width: 40%;
+    max-width: 160px;
+    margin: 0px auto 15px auto;
+  }
+  /* line 330, ../sass/style.scss */
+  #wrap #content {
+    pointer-events: none;
+    position: inherit;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    width: 100%;
+  }
+  /* line 337, ../sass/style.scss */
+  #wrap #copy {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    float: none;
+  }
+  /* line 342, ../sass/style.scss */
+  #wrap #copy h1 {
+    height: 80px;
+    font-size: 2em;
+  }
+  /* line 345, ../sass/style.scss */
+  #wrap #copy h1 span {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 350, ../sass/style.scss */
+  #wrap #copy p {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  /* line 358, ../sass/style.scss */
+  #footer {
+    position: inherit;
+    bottom: 0px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  /* line 363, ../sass/style.scss */
+  #footer form {
+    width: 90%;
+  }
 }
