@@ -32,7 +32,7 @@ var site = {
 	},
 	contentLoadedAnim: function(){
 		$('#cFlood').transition({ backgroundColor: 'rgba(160,214,193,.6)' }, 2000);
-		$('.agegateBtn').transition({marginTop: '25px'}, 1500, function(){
+		$('.agegateBtn').transition({marginTop: '30px'}, 1500, function(){
 			$('.agegateBtn').transition({opacity: 1});
 		});
 	},
@@ -80,6 +80,7 @@ $( document ).ready(function() {
 	intervalHandle = setInterval(function(){
     	if ( video.readyState === 4 && $('body').hasClass('gated') ) {
     		site.contentLoadedAnim();
+    		$('#footer').transition({opacity: 1}, 1000);
 			clearInterval(intervalHandle);
 		}
     },100)
