@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/rubies/ruby-2.1.3/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -121,9 +121,8 @@ video {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   width: 90%;
-  max-width: 740px;
 }
-/* line 83, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 #wrap #logo {
   float: left;
   width: 30%;
@@ -134,16 +133,16 @@ video {
   -o-transform: translate(-25px, 0);
   opacity: 0;
 }
-/* line 88, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 #wrap #logo img {
   width: 100%;
 }
-/* line 92, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 #wrap #copy {
   float: right;
   max-width: 65%;
 }
-/* line 95, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 #wrap #copy h1 {
   font-family: "schoolbook-web";
   font-size: 3.8em;
@@ -154,12 +153,12 @@ video {
   position: relative;
   height: 100px;
 }
-/* line 101, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 #wrap #copy h1 span {
   position: absolute;
   opacity: 0;
 }
-/* line 106, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 #wrap #copy p {
   font-family: helvetica neue;
   font-size: .8em;
@@ -170,7 +169,12 @@ video {
   max-width: 80%;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
+#content, #footer form {
+  max-width: 740px;
+}
+
+/* line 116, ../sass/style.scss */
 #footer {
   position: fixed;
   bottom: -165px;
@@ -182,14 +186,14 @@ video {
   z-index: 5;
   opacity: 0;
 }
-/* line 125, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 #footer form {
   width: 60%;
   margin: auto;
   position: relative;
   text-align: center;
 }
-/* line 131, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 #footer form::after {
   content: '';
   position: absolute;
@@ -199,7 +203,7 @@ video {
   height: 4px;
   background: url(../img/dots.svg);
 }
-/* line 139, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 #footer .aside {
   color: white;
   font-size: .6em;
@@ -207,7 +211,7 @@ video {
   text-align: center;
   margin-top: 10px;
 }
-/* line 145, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 #footer input {
   background: none;
   outline: none;
@@ -216,7 +220,7 @@ video {
   margin-top: 25px;
   color: white;
 }
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 #footer input[type=email] {
   font-family: "schoolbook-web";
   font-size: 2em;
@@ -224,22 +228,22 @@ video {
   line-height: 1.5em;
   letter-spacing: 2px;
   font-weight: 100;
-  width: 100%;
+  width: 85%;
   text-transform: uppercase;
   margin-bottom: -5px;
 }
-/* line 161, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 #footer input[type=submit] {
   font-family: "schoolbook-web";
   font-size: 2em;
   font-weight: bold;
   line-height: 1.5em;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   right: 0;
-  height: 35px;
-  width: 35px;
-  background: url(../img/submit.png) no-repeat center center;
+  height: 30px;
+  width: 30px;
+  background: url(../img/submit.svg) no-repeat center center;
   -webkit-background-size: cover;
   moz-background-size: cover;
   o-background-size: cover;
@@ -247,29 +251,29 @@ video {
   cursor: hand;
   cursor: pointer;
 }
-/* line 174, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #footer #social {
   margin: 25px 0px;
   text-align: center;
 }
-/* line 177, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #footer #social li {
   display: inline-block;
   margin-right: 30px;
   position: relative;
   text-transform: uppercase;
 }
-/* line 182, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 #footer #social li a {
   text-decoration: none;
   color: white;
   font-size: .7em;
 }
-/* line 188, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 #footer #social li:last-child {
   margin-right: 0px;
 }
-/* line 191, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #footer #social li:nth-child(2):before, #footer #social li:nth-child(2):after {
   content: '';
   position: absolute;
@@ -279,16 +283,16 @@ video {
   background-color: white;
   border-radius: 50%;
 }
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 #footer #social li:nth-child(2):before {
   left: -15px;
 }
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #footer #social li:nth-child(2):after {
   right: -17px;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #splashSplash {
   position: absolute;
   top: 50%;
@@ -303,15 +307,15 @@ video {
   width: 90%;
   max-width: 670px;
 }
-/* line 216, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 #splashSplash img {
   width: 100%;
 }
-/* line 219, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 #splashSplash .agegateBtn {
   opacity: 0;
 }
-/* line 222, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #splashSplash .ageBtn {
   border: 4px solid white;
   border-radius: 4px;
@@ -325,13 +329,13 @@ video {
   height: 40px;
   width: 40px;
 }
-/* line 233, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #splashSplash .ageBtn img {
   height: 70%;
   width: 70%;
   margin-top: 15%;
 }
-/* line 238, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #splashSplash .ageBtn .fill {
   position: absolute;
   bottom: 0;
@@ -345,16 +349,16 @@ video {
   -ms-transition: width 250ms;
   -o-transition: width 250ms;
 }
-/* line 248, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 #splashSplash .ageBtn:nth-child(2) .fill {
   left: auto;
   right: 0;
 }
-/* line 254, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 #splashSplash .ageBtn:hover .fill {
   width: 100%;
 }
-/* line 258, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #splashSplash .aside {
   font-family: helvetica neue;
   font-size: .8em;
@@ -363,7 +367,7 @@ video {
   color: white;
 }
 
-/* line 266, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .pace .pace-progress {
   background: #fcfff4;
   position: fixed;
@@ -377,72 +381,88 @@ video {
   transition: width 1s;
 }
 
-/* line 280, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .pace-inactive {
   display: none;
 }
 
-/* line 284, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
   letter-spacing: 2px;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 :-ms-input-placeholder {
   color: white;
   letter-spacing: 2px;
 }
 
 /* line 304, ../sass/style.scss */
+input.submitted {
+  pointer-events: none;
+  opacity: .7 !important;
+}
+
+/* line 308, ../sass/style.scss */
 input[type=email]::-webkit-input-placeholder {
   -webkit-transition: opacity 0.2s linear;
 }
 
-/* line 307, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 input[type=email]:focus::-webkit-input-placeholder {
   opacity: 0 !important;
 }
 
-/* line 310, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 input[type=email]:hover::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
+/* line 317, ../sass/style.scss */
+input.submitted::-webkit-input-placeholder {
+  opacity: .7;
+}
+
 @media (min-width: 641px) and (max-width: 750px) {
-  /* line 317, ../sass/style.scss */
+  /* line 324, ../sass/style.scss */
   #wrap #copy h1 {
     font-size: 3em;
     height: 80px;
   }
+
+  /* line 331, ../sass/style.scss */
+  #footer input[type=email] {
+    width: 80%;
+  }
 }
 @media (max-width: 640px) {
-  /* line 325, ../sass/style.scss */
+  /* line 337, ../sass/style.scss */
   html, body {
     overflow-x: hidden;
     overflow-y: scroll;
   }
 
-  /* line 329, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   #wrap {
     position: inherit;
     height: 100%;
   }
-  /* line 332, ../sass/style.scss */
+  /* line 344, ../sass/style.scss */
   #wrap #logo {
     transform: translate(0%, 0);
     -webkit-transform: translate(0%, 0);
@@ -454,7 +474,7 @@ input[type=email]:hover::-webkit-input-placeholder {
     max-width: 160px;
     margin: 0px auto 15px auto;
   }
-  /* line 339, ../sass/style.scss */
+  /* line 351, ../sass/style.scss */
   #wrap #content {
     pointer-events: none;
     position: inherit;
@@ -467,39 +487,43 @@ input[type=email]:hover::-webkit-input-placeholder {
     -o-transform: translate(0%, 0%);
     width: 100%;
   }
-  /* line 346, ../sass/style.scss */
+  /* line 358, ../sass/style.scss */
   #wrap #copy {
     width: 100%;
     max-width: 100%;
     margin: auto;
     float: none;
   }
-  /* line 351, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   #wrap #copy h1 {
     height: 50px;
     font-size: 2em;
   }
-  /* line 354, ../sass/style.scss */
+  /* line 366, ../sass/style.scss */
   #wrap #copy h1 span {
     width: 100%;
     text-align: center;
   }
-  /* line 359, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   #wrap #copy p {
     text-align: center;
     max-width: 295px;
     margin: auto;
   }
 
-  /* line 367, ../sass/style.scss */
+  /* line 379, ../sass/style.scss */
   #footer {
     position: inherit;
     bottom: 0px;
     opacity: 0;
     background-color: rgba(255, 255, 255, 0);
   }
-  /* line 372, ../sass/style.scss */
+  /* line 384, ../sass/style.scss */
   #footer form {
     width: 90%;
+  }
+  /* line 387, ../sass/style.scss */
+  #footer input[type=email] {
+    width: 75%;
   }
 }

@@ -1,4 +1,5 @@
 var site = {
+	breakpoint: 641,
 	init: function(){
 		this.centerCopy();
 		this.clickFunc();
@@ -11,7 +12,7 @@ var site = {
 		}
 	},
 	wrapHeight: function(){
-		if(window.innerWidth >= 641){
+		if(window.innerWidth >= site.breakpoint){
 			footerHeight = $('#footer').height();
 			wrapHeight = window.innerHeight - footerHeight;
 			$('#wrap').stop(true, false);
@@ -21,7 +22,7 @@ var site = {
 		}
 	},
 	centerCopy: function(){
-		if(window.innerWidth >= 641){
+		if(window.innerWidth >= site.breakpoint){
 			contentHeight = $('#content').height();
 			copyHeight = $('#copy').height();
 			marginTop = ((contentHeight - copyHeight)/2);
@@ -57,6 +58,14 @@ var site = {
 			});
 		});
 	},
+	reject: function(){
+		$('.agegateBtn .aside').transition({opacity: 0}, 700, function(){
+			$('.agegateBtn .aside').html('Come back when the time is right.');
+			$('.agegateBtn .aside').transition({opacity: 1}, 1000);
+		});
+		$('.agegateBtn').css('pointer-events','none');
+		$('#cancel, #accept').transition({height: 0, opacity: 0}, 1500);
+	},
 	headlineFormatting: function(){
 		var spans = $('h1 span');
 		var spansLength = spans.length;
@@ -65,9 +74,25 @@ var site = {
 		});
 	},
 	clickFunc: function(){
+		$('#cancel').on('click', function(){
+			site.reject();
+		});
+
 		$('#accept').on('click', function(){
 			$('body').removeClass('gated');
 			site.contentAnim();
+		});
+
+		$( "#eform" ).submit(function( event ) {
+		  $('.submitEmail').transition({opacity:'0'});
+		  $('.email').transition({opacity:'0'}, function(){
+			  $('.email').val('');
+			  $('.email').css('opacity','1')
+			  $('.email').blur();
+			  $('.email').addClass('submitted');
+			  $('.email').attr('placeholder','Thank You!');
+		  });
+ 			return false;
 		});
 	},
 };

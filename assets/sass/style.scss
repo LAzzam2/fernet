@@ -78,7 +78,6 @@ video {
 		top: 50%; left: 50%;
 		@include center(-50%,-50%);
 		width: 90%;
-		max-width: 740px;
 	}
 	#logo {
 		float: left;
@@ -111,7 +110,9 @@ video {
 		}
 	}
 }
-
+#content, #footer form {
+	max-width: 740px;
+}
 #footer {
 	position: fixed;
 	bottom: -165px;
@@ -154,17 +155,17 @@ video {
 		@include serifStack(2.0em, 1.5em);
 		letter-spacing: 2px;
 		font-weight: 100;
-		width: 100%;
+		width: 85%;
 		text-transform: uppercase;
 		margin-bottom: -5px;
 	}
 	input[type=submit]{
 		@include serifStack(2.0em, 1.5em);
 		position: absolute;
-		bottom: 0px; right: 0;
-		height: 35px;
-		width: 35px;
-		background: url(../img/submit.png) no-repeat center center;
+		bottom: 5px; right: 0;
+		height: 30px;
+		width: 30px;
+		background: url(../img/submit.svg) no-repeat center center;
 		-webkit-background-size: cover;
 		moz-background-size: cover;
 		o-background-size: cover;
@@ -300,7 +301,10 @@ video {
    color: white;  
    letter-spacing: 2px;
 }
-
+input.submitted {
+	pointer-events: none;
+	opacity: .7 !important;
+}
 input[type=email]::-webkit-input-placeholder  {
   -webkit-transition: opacity 0.2s linear; 
 }
@@ -310,6 +314,9 @@ input[type=email]:focus::-webkit-input-placeholder{
 input[type=email]:hover::-webkit-input-placeholder  {
   opacity: 0.4;
 }
+input.submitted::-webkit-input-placeholder  {
+  opacity: .7;
+}
 
 @media (min-width:641px) and (max-width: 750px){
 	#wrap {
@@ -318,6 +325,11 @@ input[type=email]:hover::-webkit-input-placeholder  {
 				font-size: 3em;
 				height: 80px;
 			}
+		}
+	}
+	#footer {
+		input[type=email]{
+			width: 80%;
 		}
 	}
 }
@@ -371,6 +383,9 @@ input[type=email]:hover::-webkit-input-placeholder  {
 		background-color: rgba(255,255,255,0);
 		form {
 			width: 90%;
+		}
+		input[type=email]{
+			width: 75%;
 		}
 	}
 }
