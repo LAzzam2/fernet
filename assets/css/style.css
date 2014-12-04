@@ -181,8 +181,8 @@ video {
   left: 0;
   width: 100%;
   height: 165px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-top: 3px solid white;
+  background-color: rgba(24, 43, 69, 0.1);
+  border-top: 3px solid #172b45;
   z-index: 5;
   opacity: 0;
 }
@@ -205,7 +205,7 @@ video {
 }
 /* line 140, ../sass/style.scss */
 #footer .aside {
-  color: white;
+  color: #172b45;
   font-size: .6em;
   width: 100%;
   text-align: center;
@@ -218,7 +218,7 @@ video {
   border: none;
   text-align: center;
   margin-top: 25px;
-  color: white;
+  color: #172b45;
 }
 /* line 154, ../sass/style.scss */
 #footer input[type=email] {
@@ -266,7 +266,7 @@ video {
 /* line 183, ../sass/style.scss */
 #footer #social li a {
   text-decoration: none;
-  color: white;
+  color: #172b45;
   font-size: .7em;
 }
 /* line 189, ../sass/style.scss */
@@ -277,10 +277,10 @@ video {
 #footer #social li:nth-child(2):before, #footer #social li:nth-child(2):after {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 9px;
   height: 3px;
   width: 3px;
-  background-color: white;
+  background-color: #172b45;
   border-radius: 50%;
 }
 /* line 200, ../sass/style.scss */
@@ -317,10 +317,10 @@ video {
 }
 /* line 223, ../sass/style.scss */
 #splashSplash .ageBtn {
-  border: 4px solid white;
+  border: 4px solid #172b45;
   border-radius: 4px;
   display: inline-block;
-  color: white;
+  color: #172b45;
   margin: 10px 0px;
   cursor: hand;
   cursor: pointer;
@@ -342,7 +342,7 @@ video {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(24, 43, 69, 0.3);
   transition: width 250ms;
   -webkit-transition: width 250ms;
   -moz-transformtransition: width 250ms;
@@ -364,12 +364,12 @@ video {
   font-size: .8em;
   line-height: 1.4em;
   text-transform: uppercase;
-  color: white;
+  color: #172b45;
 }
 
 /* line 267, ../sass/style.scss */
 .pace .pace-progress {
-  background: #fcfff4;
+  background: #172b45;
   position: fixed;
   z-index: 2000;
   bottom: 0;
@@ -388,27 +388,27 @@ video {
 
 /* line 285, ../sass/style.scss */
 ::-webkit-input-placeholder {
-  color: white;
+  color: #172b45;
   letter-spacing: 2px;
 }
 
 /* line 290, ../sass/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
-  color: white;
+  color: #172b45;
   letter-spacing: 2px;
 }
 
 /* line 295, ../sass/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: white;
+  color: #172b45;
   letter-spacing: 2px;
 }
 
 /* line 300, ../sass/style.scss */
 :-ms-input-placeholder {
-  color: white;
+  color: #172b45;
   letter-spacing: 2px;
 }
 
@@ -516,7 +516,7 @@ input.submitted::-webkit-input-placeholder {
     position: inherit;
     bottom: 0px;
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(24, 43, 69, 0);
   }
   /* line 384, ../sass/style.scss */
   #footer form {

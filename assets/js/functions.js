@@ -32,6 +32,7 @@ var site = {
 		}
 	},
 	contentLoadedAnim: function(){
+		$('#footer').transition({opacity: 1}, 1000);
 		$('#cFlood').transition({ backgroundColor: 'rgba(160,214,193,.6)' }, 2000);
 		$('.agegateBtn').transition({marginTop: '30px'}, 1500, function(){
 			$('.agegateBtn').transition({opacity: 1});
@@ -99,16 +100,7 @@ var site = {
 
 $( document ).ready(function() {
     site.init();
-    video = document.getElementById('video');
-	
-	var intervalHandle = null;
-	intervalHandle = setInterval(function(){
-    	if ( video.readyState === 4 && $('body').hasClass('gated') ) {
-    		site.contentLoadedAnim();
-    		$('#footer').transition({opacity: 1}, 1000);
-			clearInterval(intervalHandle);
-		}
-    },100)
+	site.contentLoadedAnim();
 });
 
 $( window ).resize(function() {

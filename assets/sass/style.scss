@@ -30,7 +30,7 @@
 }
 
 @mixin asideStack(){
-	color: white;
+	color: #172b45;
 	font-size: .6em;
 }
 
@@ -119,8 +119,8 @@ video {
 	left: 0;
 	width: 100%;
 	height: 165px;
-	background-color: rgba(255,255,255,.1);
-	border-top: 3px solid white;
+	background-color: rgba(24,43,69,.1);
+	border-top: 3px solid #172b45;
 	z-index: 5;
 	opacity: 0;
 	form {
@@ -149,7 +149,7 @@ video {
 		border: none;
 		text-align: center;
 		margin-top: 25px;
-		color: white;
+		color: #172b45;
 	}
 	input[type=email]{
 		@include serifStack(2.0em, 1.5em);
@@ -182,7 +182,7 @@ video {
 			text-transform: uppercase;
 			a {
 				text-decoration: none;
-				color: white;
+				color: #172b45;
 				font-size: .7em;
 			}
 		}
@@ -192,9 +192,9 @@ video {
 		li:nth-child(2):before, li:nth-child(2):after{
 			content: '';
 			position: absolute;
-			top: 6px;
+			top: 9px;
 			height: 3px; width: 3px;
-			background-color: white;
+			background-color: #172b45;
 			border-radius: 50%;
 		}
 		li:nth-child(2):before {
@@ -221,10 +221,10 @@ video {
 		opacity: 0;
 	}
 	.ageBtn {
-		border: 4px solid white;
+		border: 4px solid #172b45;
 		border-radius: 4px;
 		display: inline-block;
-		color: white;
+		color: #172b45;
 		margin: 10px 0px;
 		cursor: hand; cursor: pointer;
 		box-sizing: border-box;
@@ -241,7 +241,7 @@ video {
 			bottom: 0; left: 0;
 			width: 0%;
 			height: 100%;
-			background-color: rgba(255,255,255,.3);
+			background-color: rgba(24,43,69,.3);
 			@include transition(width, 250ms);
 		}
 	}
@@ -258,14 +258,14 @@ video {
 	}
 	.aside {
 		@include sansStack();
-		color: white;
+		color: #172b45;
 	}
 }
 
 
 
 .pace .pace-progress {
-  background: #fcfff4;
+  background: #172b45;
   position: fixed;
   z-index: 2000;
   bottom: 0;
@@ -283,22 +283,22 @@ video {
 }
 
 ::-webkit-input-placeholder {
-   color: white;
+   color: #172b45;
    letter-spacing: 2px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: white;  
+   color: #172b45;  
    letter-spacing: 2px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: white;  
+   color: #172b45;  
    letter-spacing: 2px;
 }
 
 :-ms-input-placeholder {  
-   color: white;  
+   color: #172b45;  
    letter-spacing: 2px;
 }
 input.submitted {
@@ -380,7 +380,7 @@ input.submitted::-webkit-input-placeholder  {
 		position: inherit;
 		bottom: 0px;
 		opacity: 0;
-		background-color: rgba(255,255,255,0);
+		background-color: rgba(24,43,69,0);
 		form {
 			width: 90%;
 		}
