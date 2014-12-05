@@ -256,6 +256,9 @@ video {
 			width: 100%;
 		}
 	}
+	#accept {
+		margin-left: -10px;
+	}
 	.aside {
 		@include sansStack();
 		color: #172b45;

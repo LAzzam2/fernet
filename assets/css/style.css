@@ -359,6 +359,10 @@ video {
   width: 100%;
 }
 /* line 259, ../sass/style.scss */
+#splashSplash #accept {
+  margin-left: -10px;
+}
+/* line 262, ../sass/style.scss */
 #splashSplash .aside {
   font-family: helvetica neue;
   font-size: .8em;
@@ -367,7 +371,7 @@ video {
   color: #172b45;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .pace .pace-progress {
   background: #172b45;
   position: fixed;
@@ -381,88 +385,88 @@ video {
   transition: width 1s;
 }
 
-/* line 281, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .pace-inactive {
   display: none;
 }
 
-/* line 285, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #172b45;
   letter-spacing: 2px;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #172b45;
   letter-spacing: 2px;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #172b45;
   letter-spacing: 2px;
 }
 
-/* line 300, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 :-ms-input-placeholder {
   color: #172b45;
   letter-spacing: 2px;
 }
 
-/* line 304, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 input.submitted {
   pointer-events: none;
   opacity: .7 !important;
 }
 
-/* line 308, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 input[type=email]::-webkit-input-placeholder {
   -webkit-transition: opacity 0.2s linear;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 input[type=email]:focus::-webkit-input-placeholder {
   opacity: 0 !important;
 }
 
-/* line 314, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 input[type=email]:hover::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 input.submitted::-webkit-input-placeholder {
   opacity: .7;
 }
 
 @media (min-width: 641px) and (max-width: 750px) {
-  /* line 324, ../sass/style.scss */
+  /* line 327, ../sass/style.scss */
   #wrap #copy h1 {
     font-size: 3em;
     height: 80px;
   }
 
-  /* line 331, ../sass/style.scss */
+  /* line 334, ../sass/style.scss */
   #footer input[type=email] {
     width: 80%;
   }
 }
 @media (max-width: 640px) {
-  /* line 337, ../sass/style.scss */
+  /* line 340, ../sass/style.scss */
   html, body {
     overflow-x: hidden;
     overflow-y: scroll;
   }
 
-  /* line 341, ../sass/style.scss */
+  /* line 344, ../sass/style.scss */
   #wrap {
     position: inherit;
     height: 100%;
   }
-  /* line 344, ../sass/style.scss */
+  /* line 347, ../sass/style.scss */
   #wrap #logo {
     transform: translate(0%, 0);
     -webkit-transform: translate(0%, 0);
@@ -474,7 +478,7 @@ input.submitted::-webkit-input-placeholder {
     max-width: 160px;
     margin: 0px auto 15px auto;
   }
-  /* line 351, ../sass/style.scss */
+  /* line 354, ../sass/style.scss */
   #wrap #content {
     pointer-events: none;
     position: inherit;
@@ -487,42 +491,42 @@ input.submitted::-webkit-input-placeholder {
     -o-transform: translate(0%, 0%);
     width: 100%;
   }
-  /* line 358, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   #wrap #copy {
     width: 100%;
     max-width: 100%;
     margin: auto;
     float: none;
   }
-  /* line 363, ../sass/style.scss */
+  /* line 366, ../sass/style.scss */
   #wrap #copy h1 {
     height: 50px;
     font-size: 2em;
   }
-  /* line 366, ../sass/style.scss */
+  /* line 369, ../sass/style.scss */
   #wrap #copy h1 span {
     width: 100%;
     text-align: center;
   }
-  /* line 371, ../sass/style.scss */
+  /* line 374, ../sass/style.scss */
   #wrap #copy p {
     text-align: center;
     max-width: 295px;
     margin: auto;
   }
 
-  /* line 379, ../sass/style.scss */
+  /* line 382, ../sass/style.scss */
   #footer {
     position: inherit;
     bottom: 0px;
     opacity: 0;
     background-color: rgba(24, 43, 69, 0);
   }
-  /* line 384, ../sass/style.scss */
+  /* line 387, ../sass/style.scss */
   #footer form {
     width: 90%;
   }
-  /* line 387, ../sass/style.scss */
+  /* line 390, ../sass/style.scss */
   #footer input[type=email] {
     width: 75%;
   }
