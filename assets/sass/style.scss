@@ -388,7 +388,21 @@ input.submitted::-webkit-input-placeholder  {
 			width: 90%;
 		}
 		input[type=email]{
+			@include serifStack(1.5em, 1.5em);
 			width: 75%;
+		}
+		input[type=submit]{
+			@include serifStack(1.5em, 1.5em);
+			position: absolute;
+			bottom: 4px; right: 0;
+			height: 18px;
+			width: 18px;
+			background: url(../img/submit.svg) no-repeat center center;
+			-webkit-background-size: cover;
+			moz-background-size: cover;
+			o-background-size: cover;
+			background-size: cover;
+			cursor: hand; cursor: pointer;
 		}
 	}
 }

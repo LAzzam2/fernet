@@ -528,6 +528,29 @@ input.submitted::-webkit-input-placeholder {
   }
   /* line 390, ../sass/style.scss */
   #footer input[type=email] {
+    font-family: "schoolbook-web";
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
     width: 75%;
+  }
+  /* line 394, ../sass/style.scss */
+  #footer input[type=submit] {
+    font-family: "schoolbook-web";
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    background: url(../img/submit.svg) no-repeat center center;
+    -webkit-background-size: cover;
+    moz-background-size: cover;
+    o-background-size: cover;
+    background-size: cover;
+    cursor: hand;
+    cursor: pointer;
   }
 }
